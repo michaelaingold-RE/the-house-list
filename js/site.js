@@ -46,6 +46,6 @@
 
   var box = document.createElement("div");
   box.className = "host";
-  box.innerHTML = '<img class="nia" alt="Nia" src="../images/nia.jpg"><div><b>Nia \u00b7 site host</b><p class="say">' + copy.say + '</p><p class="why">' + copy.why + '</p></div>';
+  box.innerHTML = '<img class="nia" alt="Nia" src="data:image/jpeg;base64,' + '' + 'PLACEHOLDER">';
   btn.parentNode.insertBefore(box, btn);
 })();
