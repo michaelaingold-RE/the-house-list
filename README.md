@@ -1,2 +1,7 @@
-# the-house-list
-The House List — notes on household products that actually get used.
+# The House List
+
+Static Amazon Associates site.
+
+After Associates approval, add your tag to Amazon URLs as `?tag=YOURTAG-20`.
+
+Enable GitHub Pages: Settings → Pages → Deploy from branch `main` → root.
