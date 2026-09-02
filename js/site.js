@@ -7,7 +7,6 @@
       a.href = u.toString();
     } catch (e) {}
   });
-
   var lines = {
     "lmnt-raspberry-salt": { say: "This packet is for heat and long days. It is salty on purpose. No sugar.", why: "Click through if you already want a zero-sugar electrolyte and need to check flavor and count.", asin: "" },
     "liquid-iv-lemon-lime": { say: "This is the packet people finish. It uses sugar so it drinks easier than LMNT.", why: "Click through if you want the travel sleeve and need to confirm the Lemon Lime count.", asin: "" },
@@ -30,22 +29,19 @@
     "zulay-frother": { say: "A $12 wand for coffee foam and protein powder. Rinse it immediately.", why: "Click through if you make a drink every morning and do not own one.", asin: "" },
     "beckham-pillows": { say: "Soft default pair. Not a medical pillow. Give them a day out of the bag.", why: "Click through if you need two pillows this week and want the standard/queen pair.", asin: "" }
   };
-
   var file = (location.pathname.split("/").pop() || "").replace(".html", "");
   var copy = lines[file];
   if (!copy) return;
   var btn = document.querySelector("a.btn");
   if (!btn) return;
-
   if (copy.asin) {
     var shot = document.createElement("p");
     shot.className = "shot";
     shot.innerHTML = '<img alt="Product" src="https://images-na.ssl-images-amazon.com/images/P/' + copy.asin + '._AC_UL400_.jpg">';
     btn.parentNode.insertBefore(shot, btn);
   }
-
   var box = document.createElement("div");
   box.className = "host";
-  box.innerHTML = '<img class="nia" alt="Nia" src="data:image/jpeg;base64,' + '' + 'PLACEHOLDER">';
+  box.innerHTML = '<img class="nia" alt="Nia" src="../images/nia.jpg" onerror="this.style.display=\'none\'"><div><b>Nia \u00b7 site host</b><p class="say">' + copy.say + '</p><p class="why">' + copy.why + '</p></div>';
   btn.parentNode.insertBefore(box, btn);
 })();
