@@ -34,14 +34,14 @@
   if (!copy) return;
   var btn = document.querySelector("a.btn");
   if (!btn) return;
+  var box = document.createElement("div");
+  box.className = "host";
+  box.innerHTML = '<img class="nia" alt="Nia" src="../images/nia.jpg.png"><div><b>Nia \u00b7 site host</b><p class="say">' + copy.say + '</p><p class="why">' + copy.why + '</p></div>';
+  btn.parentNode.insertBefore(box, btn);
   if (copy.asin) {
     var shot = document.createElement("p");
     shot.className = "shot";
     shot.innerHTML = '<img alt="Product" src="https://images-na.ssl-images-amazon.com/images/P/' + copy.asin + '._AC_UL400_.jpg">';
     btn.parentNode.insertBefore(shot, btn);
   }
-  var box = document.createElement("div");
-  box.className = "host";
-  box.innerHTML = '<img class="nia" alt="Nia" src="../images/nia.jpg.png"><div><b>Nia \u00b7 site host</b><p class="say">' + copy.say + '</p><p class="why">' + copy.why + '</p></div>';
-  btn.parentNode.insertBefore(box, btn);
 })();
