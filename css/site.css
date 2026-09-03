@@ -9,12 +9,15 @@ header { background:#fff; border-bottom:1px solid var(--line); position:sticky; 
 nav { display:flex; gap:16px; font-family:system-ui,sans-serif; font-size:.9rem; }
 nav a { text-decoration:none; color:var(--muted); }
 nav a:hover { color:var(--ink); }
-.hero { padding:48px 0 24px; }
+.hero { padding:36px 0 12px; }
 h1 { font-size:2.1rem; line-height:1.2; margin:0 0 12px; }
 h2 { font-size:1.4rem; margin:2rem 0 .6rem; }
 .lede { font-size:1.15rem; color:var(--muted); max-width:40rem; }
 .kicker { font-family:system-ui,sans-serif; font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin:0 0 8px; }
 .disc { font-family:system-ui,sans-serif; font-size:.85rem; color:var(--muted); }
+.story { margin:18px 0 28px; }
+.story img { width:100%; max-width:880px; height:auto; border-radius:14px; display:block; background:#e7e0d6; }
+.story figcaption { font-family:system-ui,sans-serif; font-size:.88rem; color:var(--muted); margin-top:8px; }
 .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:16px; margin:24px 0 48px; }
 .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px; text-decoration:none; color:inherit; display:block; }
 .card:hover { border-color:#c4b8a8; }
